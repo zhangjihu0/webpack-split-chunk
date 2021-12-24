@@ -1,0 +1,8 @@
+window.webpackJsonp(['<%-chunkId%>'],{
+    <%for(moduleId in modules){%>
+        "<%-moduleId%>":(function(module,exports,__webpack_require__){
+            <%-modules[moduleId]%>
+        }),
+
+    <%}%>
+})
